@@ -1,3 +1,5 @@
+var currentHour = moment();
+console.log(currentHour);
 
   $("#search_btn").on("click", function(){
     var myStorage = window.localStorage;
@@ -31,6 +33,8 @@
     //display stuff
     $("#cityName").text(cityName)
     $("#temperature").text(temperatureF);
+    //$("#currentTime").text(currentHour);
+    $("#currentTime").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     $("#humidity").text(humidity);
     $("#wind_speed").html(windSpeed);
     $("#ultra_violet_index").text(uvIndex);
