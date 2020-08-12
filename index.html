@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="item1">Weather App</div>
+
+    <div class="item2">
+          <input id="search_input" type="text" class="form-control" placeholder="Search for a city">
+            <div class="input-group-append">
+                <button id="search_btn" class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i></button>
+                <ul class="nav nav-pills nav-stacked" id="search_history">
+                    <li class="active"><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                  </ul><br>
+            </div>
+        </div>
+    <div class="item3">Current Weather
+         <div id="results_div">
+                <p id="cityName"></p>
+                <p id="currentTime"></p>
+                <p id="iconId"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind_speed"></p>
+                <p id="ultra_violet_index"></p>
+            </div>
+    </div>
+        
+  <div class="item5">5-Day Forecast:</div>
+      <p id="DayOne"></p>
+      <p id="DayTwo"></p>
+      <p id="DayThree"></p>
+      <p id="DayFour"></p>
+      <p id="DayFive"></p>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="script.js"></script> 
+
+</body>
+
+</html>
